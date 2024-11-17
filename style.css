@@ -1,0 +1,291 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3f2fd; /* Fundo claro azul */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Estilo das fontes */
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #003366;
+}
+
+button {
+    background-color: #006bb3; /* Azul forte */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #004080; /* Azul mais escuro */
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+a {
+    color: #006bb3;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+a:hover {
+    color: #004080;
+}
+
+/* Tela de Boas-Vindas */
+#boas-vindas {
+    background-color: #0091D9;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+#boas-vindas h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#boas-vindas p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#boas-vindas button {
+    font-size: 1.3rem;
+}
+
+/* Tela de Login */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #006bb3;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #004080;
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.7);
+}
+
+.login-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #006bb3;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #004080;
+}
+
+/* Tela de Estoque */
+#estoque {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.add-car-btn {
+    margin-top: 20px;
+    background-color: #0091D9;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.add-car-btn:hover {
+    background-color: #006bb3;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+#carros-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.carro-item {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carro-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carro-item h3 {
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.carro-item p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.carro-item button {
+    background-color: #004080;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.carro-item button:hover {
+    background-color: #006bb3;
+    transform: translateY(-3px);
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Tela de Edição de Carro */
+.edit-car-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: auto;
+}
+
+.edit-car-container h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.edit-car-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.edit-car-container input:focus {
+    border-color: #004080;
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.7);
+}
+
+.edit-car-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #006bb3;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.edit-car-container button:hover {
+    background-color: #004080;
+}
+
+/* Tela de Esqueci a Senha */
+.forgot-password-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: auto;
+}
+
+.forgot-password-container h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.forgot-password-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.forgot-password-container input:focus {
+    border-color: #004080;
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.7);
+}
+
+.forgot-password-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #006bb3;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.forgot-password-container button:hover {
+    background-color: #004080;
+}
